@@ -16,7 +16,20 @@ pub use global_hotkey::{
 pub use crate::mobile_shortcut::*;
 
 use crate::window;
+// `global-hotkey` is built against its own `keyboard-types` version, so its `Modifiers` type must be
+// used on the platforms where it is available.
+#[cfg(any(target_os = "ios", target_os = "android"))]
 use dioxus_html::input_data::keyboard_types::Modifiers;
+#[cfg(any(
+    target_os = "windows",
+    target_os = "macos",
+    target_os = "linux",
+    target_os = "dragonfly",
+    target_os = "freebsd",
+    target_os = "netbsd",
+    target_os = "openbsd"
+))]
+use global_hotkey::hotkey::Modifiers;
 use slab::Slab;
 use std::{cell::RefCell, collections::HashMap, rc::Rc, str::FromStr};
 use tao::keyboard::ModifiersState;

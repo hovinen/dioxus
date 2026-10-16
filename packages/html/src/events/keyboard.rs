@@ -1,5 +1,5 @@
 use dioxus_core::Event;
-use keyboard_types::{Code, Key, Location, Modifiers};
+use keyboard_types::{Code, Key, Location, Modifiers, NamedKey};
 use std::fmt::Debug;
 
 use crate::ModifiersInteraction;
@@ -163,7 +163,7 @@ impl From<&KeyboardData> for SerializedKeyboardData {
 #[cfg(feature = "serialize")]
 impl HasKeyboardData for SerializedKeyboardData {
     fn key(&self) -> Key {
-        std::str::FromStr::from_str(&self.key).unwrap_or(Key::Unidentified)
+        std::str::FromStr::from_str(&self.key).unwrap_or(Key::Named(NamedKey::Unidentified))
     }
 
     fn code(&self) -> Code {
