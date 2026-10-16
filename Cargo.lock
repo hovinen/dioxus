@@ -68,8 +68,7 @@ dependencies = [
 [[package]]
 name = "accesskit_xplat"
 version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "538784c169bebd349060eb5ceedc294c0b0e603a9862ff055f7572fd830980db"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "accesskit",
  "accesskit_macos",
@@ -364,7 +363,7 @@ dependencies = [
  "anyrender",
  "ash",
  "ash-window",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "gl",
  "glutin",
  "hashbrown 0.17.1",
@@ -403,7 +402,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04d545f71a3f13b1099d5787c44cfeb00322cebbebbf90c4f8cdae78bee423f7"
 dependencies = [
  "anyrender",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures-channel",
  "kurbo",
  "peniko",
@@ -424,7 +423,7 @@ dependencies = [
  "anyrender",
  "bytemuck",
  "color",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "glifo",
  "kurbo",
  "peniko",
@@ -441,7 +440,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5139465733e457ebd2dd04efbee5aa6fbc1d8747d0e3fe0f81b8de4f240cb01"
 dependencies = [
  "anyrender",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures-channel",
  "glifo",
  "kurbo",
@@ -1272,8 +1271,7 @@ dependencies = [
 [[package]]
 name = "blitz-dom"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "53e58a506e20e90b69ab8b03f933c125237361c31b0dae0e7e149c5bcbf9b28a"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "accesskit",
  "anyrender",
@@ -1284,7 +1282,7 @@ dependencies = [
  "color",
  "cssparser 0.38.0",
  "cursor-icon",
- "debug_timer",
+ "debug_timer 0.1.3 (git+https://github.com/DioxusLabs/blitz)",
  "euclid",
  "html-escape",
  "icu_casemap",
@@ -1324,8 +1322,7 @@ dependencies = [
 [[package]]
 name = "blitz-html"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0bf860f5757da5c14a2cb986987d2be392e9abc9e2a42d815a699649f08a7cee"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "blitz-dom",
  "blitz-traits",
@@ -1337,8 +1334,7 @@ dependencies = [
 [[package]]
 name = "blitz-net"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a918421d2f94851659add7673a3e1fc7a32c7fa1c2d9fe4b51fbea02d6fc8324"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "blitz-traits",
  "data-url 0.3.2",
@@ -1351,8 +1347,7 @@ dependencies = [
 [[package]]
 name = "blitz-paint"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "31dd8929dd745efd8ada25f977a163b4c17fd8e9804cb7f42441df63215d2fdd"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "anyrender",
  "anyrender_svg",
@@ -1374,8 +1369,7 @@ dependencies = [
 [[package]]
 name = "blitz-shell"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ab926b4e1a03f8b6985d47d93b8bb6215455f966c4cab77e66701e317934d92"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "accesskit",
  "accesskit_xplat",
@@ -1400,8 +1394,7 @@ dependencies = [
 [[package]]
 name = "blitz-traits"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "61b6c502871a565bb274ddead6d08e33af62cacf88ff0e2557698fdaf24dcaf0"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "atomic_refcell",
  "bitflags 2.11.1",
@@ -3029,6 +3022,11 @@ name = "debug_timer"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da220af51a1a335e9a930beaaef53d261e41ea9eecfb3d973a3ddae1a7284b9c"
+
+[[package]]
+name = "debug_timer"
+version = "0.1.3"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 
 [[package]]
 name = "debugid"
@@ -10151,7 +10149,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "31c2ba47171f8376a1cd74f8d575f1d729c033fc007f59a9da3688c31187264b"
 dependencies = [
  "anyrender",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "pixels",
 ]
 
@@ -12323,7 +12321,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "809f260e686014e0222158362d571a7813cd836a27b7e51ed7e1dcf39ce08378"
 dependencies = [
  "anyrender",
- "debug_timer",
+ "debug_timer 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "kurbo",
  "peniko",
  "softbuffer",
@@ -12891,8 +12889,7 @@ dependencies = [
 [[package]]
 name = "stylo_taffy"
 version = "0.3.0-beta.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "58d910649e40ac76167e51da4692180beadba181581b26d501024a132772f5a3"
+source = "git+https://github.com/DioxusLabs/blitz#e72650a6e67941852fddf025295cfee30c39ea32"
 dependencies = [
  "bitflags 2.11.1",
  "stylo",
@@ -13109,8 +13106,7 @@ dependencies = [
 [[package]]
 name = "taffy"
 version = "0.15.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c8480887e8803986d96a7173729565520d4bbb721ad6b7ad6941a22897207aa"
+source = "git+https://github.com/DioxusLabs/taffy?rev=6c2106e3df79493d304f954dc2cd4a4a382981d3#6c2106e3df79493d304f954dc2cd4a4a382981d3"
 dependencies = [
  "serde",
  "slotmap",
